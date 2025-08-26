@@ -143,9 +143,9 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-&trans        &trans        &mwh DN       &mmv MOVE_UP  &mwh UP       &trans            &trans        &trans        &trans        &trans        &trans        &trans
+&trans        &trans        &msc SCRL_DOWN       &mmv MOVE_UP  &msc SCRL_UP       &trans            &trans        &trans        &trans        &trans        &trans        &trans
 &trans        &trans        &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans         &trans        &kp RSHFT     &kp RGUI      &kp RALT      &kp RCTRL     &trans
-&trans        &trans        &mwh LEFT     &trans        &mwh RIGHT    &mkp MCLK         &trans        &none         &trans        &trans        &trans        &trans
+&trans        &trans        &msc SCRL_LEFT     &trans        &msc SCRL_RIGHT    &mkp MB3         &trans        &none         &trans        &trans        &trans        &trans
                                           &mkp LCLK     &mkp RCLK     &trans            &trans        &trans        &trans
             >;
         };
