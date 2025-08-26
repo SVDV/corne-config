@@ -9,6 +9,17 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 
+// Layer definitions
+#define DEFAULT 0
+#define LOWER 1
+#define RAISE 2
+#define MOUSE 3
+#define SYMBOLS 4
+#define FUNCTION 5
+#define NAV 6
+#define NUMBER 7
+#define SETTINGS 8
+
 / {
     behaviors {
         HMR: HMR {
@@ -93,8 +104,8 @@
             bindings = <
 &caps_word                 &kp Q         &kp W        &kp E        &kp R         &kp T      &kp Y          &kp U         &kp I        &kp O        &kp P            &kp BACKSLASH
 &mt LS(LA(LG(LCTRL))) TAB  &HML LCTRL A  &HML LALT S  &HML LGUI D  &HML LSHFT F  &kp G      &kp H          &HMR RSHFT J  &HMR RGUI K  &HMR RALT L  &HMR RCTRL SEMI  &mt RS(RA(RG(RCTRL))) SQT
-&kp UNDER                  &kp Z         &kp X        &kp C        &kp V         &kp B      &kp N          &kp M         &kp COMMA    &kp DOT      &kp FSLH         &lt_minus Settings MINUS
-                                                      &mo Function        &lt Number ENTER     &lt_esc Nav ESC    &lt Mouse BACKSPACE  &lt_space Symbols SPACE     &none
+&kp UNDER                  &kp Z         &kp X        &kp C        &kp V         &kp B      &kp N          &kp M         &kp COMMA    &kp DOT      &kp FSLH         &lt_minus SETTINGS MINUS
+                                                      &mo FUNCTION        &lt NUMBER ENTER     &lt_esc NAV ESC    &lt MOUSE BACKSPACE  &lt_space SYMBOLS SPACE     &none
             >;
         };
 
