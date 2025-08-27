@@ -177,16 +177,6 @@
             bindings = <&mo>, <&kp>;
         };
 
-        ht_space: hold_tap_space {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_SPACE";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            bindings = <&kp>, <&mo>;
-        };
-
         lt_minus: layer_tap_minus {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_MINUS";
@@ -206,7 +196,7 @@
 &caps_word                 &kp Q              &kp W             &kp E             &kp R              &kp T              &kp Y  &kp U              &kp I             &kp O             &kp P                 &kp BACKSLASH
 &mt LS(LA(LG(LCTRL))) TAB  &hm_l_pnk LCTRL A  &hm_l_rng LALT S  &hm_l_mid LGUI D  &hm_l_idx LSHFT F  &kp G              &kp H  &hm_r_idx RSHFT J  &hm_r_mid RGUI K  &hm_r_rng RALT L  &hm_r_pnk RCTRL SEMI  &mt RS(RA(RG(RCTRL))) SQT
 &kp UNDER                  &kp Z              &kp X             &kp C             &kp V              &kp B              &kp N  &kp M              &kp COMMA         &kp DOT           &kp FSLH              &lt_minus SETTINGS MINUS
-                                                                &mo FUNCTION      &lt NUMBER ENTER   &lt_esc NAV ESC    &kp BACKSPACE  &ht_space SPACE SYMBOLS  &mo MOUSE
+                                                                &mo FUNCTION      &lt NUMBER ENTER   &lt_esc NAV ESC    &kp BACKSPACE  &lt_space SYMBOLS SPACE  &mo MOUSE
             >;
         };
 
