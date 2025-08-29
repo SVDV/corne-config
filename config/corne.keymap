@@ -187,6 +187,28 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_copy {
+            timeout-ms = <50>;
+            key-positions = <26 27>;  // X + C
+            bindings = <&kp LG(C)>;
+        };
+
+        combo_paste {
+            timeout-ms = <50>;
+            key-positions = <27 28>;  // C + V
+            bindings = <&kp LG(V)>;
+        };
+
+        combo_cut {
+            timeout-ms = <50>;
+            key-positions = <25 26>;  // Z + X
+            bindings = <&kp LG(X)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
